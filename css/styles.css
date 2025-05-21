@@ -1,0 +1,227 @@
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    background-color: #1e1b29;
+    font-family: 'MedievalSharp', cursive;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1b29; 
+    height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #4b1d3f;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.navbar ul li {
+    margin-top: 0px;
+    margin-right: 10px;
+    
+}
+
+.site-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.site-main {
+    padding: 20px;
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2d1737;
+    border-radius: 25px;
+    color: #fff8dc
+}
+
+.glowing-text{
+    color: #fff8dc;
+  text-shadow:
+    0 0 5px #ffd700,
+    0 0 10px #ffa500,
+    0 0 20px #ff8c00,
+    0 0 40px #ffa500;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.welcome:hover {
+    background-color: #472a54;
+
+}
+
+/* About us Styling */
+
+.about-us {
+    background-color: #2c1d3c;
+    color: #e4dccf;
+    padding: 30px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.about-us h2 {
+    color: #ffa500;
+    text-shadow: 0 0 6px #ffa500;
+}
+
+/* Event class styling (this is the container for our events) */
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+    
+}
+
+/* individual event styling */
+.event {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #6e4a9e;
+    max-width: 300px;
+    background-color: #2c1d3c;
+    color: #fff;
+    
+    transition: transform 0.3s;
+}
+
+
+/* Idividual event image styling */
+
+.event img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 250px;
+
+}
+/* Grid Approach styling */
+
+.event-grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+.event:hover {
+    transform: scale(1.03);
+  }
+
+/* Styling for screen size 600px in width or less */
+@media screen and (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* form styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #2c1d3c;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+  
+}
+
+.button {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #472a54;
+    border-width: 6px;
+    border-color: #6e4a9e;
+    
+    
+}
+
+
+/* menu styling */
+
+.menu img {
+    max-width: 150px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #6e4a9e;
+  }
+  
+  th, td {
+    border: 3px solid black;
+    padding: 12px;
+    text-align: left;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #6e4a9e;
+  }
+  
+  table img {
+    border-radius: 8px;
+  }
+
+/*location styling */
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+    color: white;
+    font-weight: bold;
+}
+  
+  
+/* Footer Styling*/
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4px 0px;
+}
